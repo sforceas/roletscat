@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="cat">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoletsCAT</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="header__textbox">
+            <h1>Rolets CAT</h1>
+            <h2>La comunitat de rol en català</h2>
+        </div>
+        
+        <div class="header__logobox">
+            <img class="header__img" src="img/logo_video.png" alt="Rolets Cat">
+        </div>
+            
+
+    </header>
+
+
+
+    <section class="container">
+        <h2 class="container__title">Prèviament en Rolets Cat</h2>
+        
+        <!-- Add a placeholder for the Twitch embed -->
+        <div id="twitch-embed"></div>
+
+        <!-- Load the Twitch embed script -->
+        <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+        <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+        <script type="text/javascript">
+        new Twitch.Embed("twitch-embed", {
+            width: 854,
+            height: 480,
+            channel: "rolets_cat",
+            // only needed if your site is also embedded on embed.example.com and othersite.example.com 
+        });
+        </script>        
+                        
+    </section>
+
+    <section class="container">
+        <h2 class="container__title">Les últimes sessions</h2>
+                
+        <div class="container__carroussel">
+            <div class=container__carrousel-ytvideo>
+                <iframe
+                    src="https://player.twitch.tv/?video=800372828&parent=roletscat.github.io&autoplay=false"
+                    height="720"
+                    width="1280"
+                    frameborder="0"
+                    scrolling="no"
+                    allowfullscreen="true">
+                </iframe>
+            </div>
+
+            <div class=container__carrousel-ytvideo>
+
+            </div>
+
+            <div class=container__carrousel-ytvideo>
+
+            </div>
+
+        </div>
+                       
+    </section>
+
+    <section class="container">
+        <h2 class="container__title">Millors moments</h2>
+                
+        <div section="container__twitch">
+
+        </div>
+                       
+    </section>
+
+
+</body>
