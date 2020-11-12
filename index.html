@@ -49,23 +49,21 @@
         <h2 class="container__title">Les últimes sessions</h2>
                 
         <div class="container__carroussel">
+            
             <div class=container__carrousel-ytvideo>
-                <iframe
-            src="https://clips.twitch.tv/embed?clip=IncredulousAbstemiousFennelImGlitch&parent=streamernews.example.com&parent=embed.example.com"
-            height="360"
-            width="640"
-            frameborder="0"
-            scrolling="no"
-            allowfullscreen="true">
-            </iframe>
-            </div>
-
-            <div class=container__carrousel-ytvideo>
-
-            </div>
-
-            <div class=container__carrousel-ytvideo>
-
+                
+                <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
+                    <div id="800372828"></div>
+                    <script type="text/javascript">
+                    var options = {
+                        width: 854,
+                        height: 480,
+                        channel: "rolets_cat",
+                        
+                    };
+                    var player = new Twitch.Player("SamplePlayerDivID", options);
+                    player.setVolume(0.5);
+                </script>
             </div>
 
         </div>
